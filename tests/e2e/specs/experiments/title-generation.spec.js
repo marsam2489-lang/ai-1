@@ -22,7 +22,7 @@ test.describe( 'Title Generation Experiment', () => {
 		await enableExperiments( admin, page );
 
 		// Enable the Title Generation Experiment.
-		await enableExperiment( admin, page, 'title-generation' );
+		await enableExperiment( admin, page, 'Title Generation' );
 	} );
 
 	test( 'Can use the Title Generation Experiment with a post with no title', async ( {
@@ -34,7 +34,7 @@ test.describe( 'Title Generation Experiment', () => {
 		await enableExperiments( admin, page );
 
 		// Enable the Title Generation Experiment.
-		await enableExperiment( admin, page, 'title-generation' );
+		await enableExperiment( admin, page, 'Title Generation' );
 
 		// Create a new post.
 		await admin.createNewPost( {
@@ -104,7 +104,7 @@ test.describe( 'Title Generation Experiment', () => {
 		await enableExperiments( admin, page );
 
 		// Enable the Title Generation Experiment.
-		await enableExperiment( admin, page, 'title-generation' );
+		await enableExperiment( admin, page, 'Title Generation' );
 
 		// Create a new post.
 		await admin.createNewPost( {
@@ -171,7 +171,7 @@ test.describe( 'Title Generation Experiment', () => {
 		page,
 	} ) => {
 		// Enable the Title Generation Experiment.
-		await enableExperiment( admin, page, 'title-generation' );
+		await enableExperiment( admin, page, 'Title Generation' );
 
 		// Globally turn off Experiments.
 		await disableExperiments( admin, page );
@@ -205,7 +205,7 @@ test.describe( 'Title Generation Experiment', () => {
 		await enableExperiments( admin, page );
 
 		// Disable the Title Generation Experiment.
-		await disableExperiment( admin, page, 'title-generation' );
+		await disableExperiment( admin, page, 'Title Generation' );
 
 		// Create a new post.
 		await admin.createNewPost( {
